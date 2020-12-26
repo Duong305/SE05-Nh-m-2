@@ -76,7 +76,7 @@ for i in s1:
             msp.add_line(m[0], m[1])
         if math.sqrt((m[0][0]-m[1][0])**2 + (m[0][1]-m[1][1])**2 + (m[0][2]-m[1][2])**2) == t[26]:
             msp.add_line(m[0], m[1])
-k.saveas('yeah5.dxf')
+k.saveas('XoayTấm.dxf')
 
     
 
