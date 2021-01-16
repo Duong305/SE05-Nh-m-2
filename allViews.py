@@ -37,7 +37,7 @@ def sapxep(a):
         i.sort()
         c.append(tuple(i))
     return list(set(c))
-doc = xml.dom.minidom.parse("a.xml")
+doc = xml.dom.minidom.parse("allView_data.xml")
 expertise = doc.getElementsByTagName("globalP")
 expertise1 = doc.getElementsByTagName("Values")
 expertise2 = doc.getElementsByTagName("Part")
@@ -63,7 +63,7 @@ TenTam = []
 KichThuoc = []
 for i in range(len(a)):
     if i%8 == 0:
-        ToaDoDiem.append(a[i]+a[i+1]+a[i+2]+a[i+3]+a[i+4]+a[i+5]+a[i+6]+a[i+7]) #(1,0) + (0,1) = (1,0,0,1) ((0 
+        ToaDoDiem.append(a[i]+a[i+1]+a[i+2]+a[i+3]+a[i+4]+a[i+5]+a[i+6]+a[i+7]) 
 for i in expertise1:         
     e = i.getAttribute("W")
     e1 = i.getAttribute("D")
