@@ -76,35 +76,35 @@ for i in range(len(ToaDoDiem)):
     t1 = list(ToaDoDiem[i])
     for m in range(len(t1)):
         if m%3 == 0:
-            if max(sapxepX(t1)) < max(sapxepX(ToaDoDiem[2])) and max(sapxepX(t1)) < max(sapxepX(ToaDoDiem[5])) and max(sapxepX(t1)) < max(sapxepX(ToaDoDiem[6])):
+            if max(sapxepX(t1)) < (max(sapxepX(ToaDoDiem[2]))+min(sapxepX(ToaDoDiem[2])))/2 and max(sapxepX(t1)) < (max(sapxepX(ToaDoDiem[5]))+min(sapxepX(ToaDoDiem[5])))/2 and max(sapxepX(t1)) < (max(sapxepX(ToaDoDiem[6]))+min(sapxepX(ToaDoDiem[6])))/2:
                 x0 = t1[m]
                 t1[m] = x0 - 200
-            if min(sapxepX(t1)) > min(sapxepX(ToaDoDiem[2])) and min(sapxepX(t1)) > min(sapxepX(ToaDoDiem[5])) and min(sapxepX(t1)) > min(sapxepX(ToaDoDiem[6])):
+            if min(sapxepX(t1)) > (max(sapxepX(ToaDoDiem[2]))+min(sapxepX(ToaDoDiem[2])))/2 and min(sapxepX(t1)) > (max(sapxepX(ToaDoDiem[5]))+min(sapxepX(ToaDoDiem[5])))/2 and min(sapxepX(t1)) > (max(sapxepX(ToaDoDiem[6]))+min(sapxepX(ToaDoDiem[6])))/2:
                 x01 = t1[m]
                 t1[m] = x01 + 200
-            if min(sapxepY(t1)) > min(sapxepY(ToaDoDiem[2])) and min(sapxepY(t1)) > min(sapxepY(ToaDoDiem[5])) and min(sapxepY(t1)) > min(sapxepY(ToaDoDiem[6])):
+            if min(sapxepY(t1)) > (max(sapxepY(ToaDoDiem[2]))+min(sapxepY(ToaDoDiem[2])))/2 and min(sapxepY(t1)) > (max(sapxepY(ToaDoDiem[5]))+min(sapxepY(ToaDoDiem[5])))/2 and min(sapxepY(t1)) > (max(sapxepY(ToaDoDiem[6]))+min(sapxepY(ToaDoDiem[6])))/2:
                 y = t1[m+1]
                 if i != 4:
                     t1[m+1] = y + 200
                 else:
                     t1[m+1] = y + 120
-            if max(sapxepY(t1)) < max(sapxepY(ToaDoDiem[2])) and max(sapxepY(t1)) < max(sapxepY(ToaDoDiem[5])) and max(sapxepY(t1)) < max(sapxepY(ToaDoDiem[6])):
+            if max(sapxepY(t1)) < (max(sapxepY(ToaDoDiem[2]))+min(sapxepY(ToaDoDiem[2])))/2 and max(sapxepY(t1)) < (max(sapxepY(ToaDoDiem[5]))+min(sapxepY(ToaDoDiem[5])))/2 and max(sapxepY(t1)) < (max(sapxepY(ToaDoDiem[6]))+min(sapxepY(ToaDoDiem[6])))/2:
                 y1 = t1[m+1]
                 t1[m+1] = y1 - 200
     a.clear()
     for m in range(len(t1)):
         if m%3 == 0:
             a.append((t1[m], t1[m+1], t1[m+2]))
-    if max(sapxepX(t1)) < max(sapxepX(ToaDoDiem[2])) and max(sapxepX(t1)) < max(sapxepX(ToaDoDiem[5])) and max(sapxepX(t1)) < max(sapxepX(ToaDoDiem[6])):
+    if max(sapxepX(t1)) < (max(sapxepX(ToaDoDiem[2]))+min(sapxepX(ToaDoDiem[2])))/2 and max(sapxepX(t1)) < (max(sapxepX(ToaDoDiem[5]))+min(sapxepX(ToaDoDiem[5])))/2 and max(sapxepX(t1)) < (max(sapxepX(ToaDoDiem[6]))+min(sapxepX(ToaDoDiem[6])))/2:
         msp.add_text(TenTam[i], dxfattribs = {'style': 'LiberationSerif', 'height': 15}).set_pos((a[0][0]-250, a[0][1]-250, (sapxepZ(t1)[0]+sapxepZ(t1)[1])/2), align='CENTER')
-    if min(sapxepX(t1)) > min(sapxepX(ToaDoDiem[2])) and min(sapxepX(t1)) > min(sapxepX(ToaDoDiem[5])) and min(sapxepX(t1)) > min(sapxepX(ToaDoDiem[6])):
+    if min(sapxepX(t1)) > (max(sapxepX(ToaDoDiem[2]))+min(sapxepX(ToaDoDiem[2])))/2 and min(sapxepX(t1)) > (max(sapxepX(ToaDoDiem[5]))+min(sapxepX(ToaDoDiem[5])))/2 and min(sapxepX(t1)) > (max(sapxepX(ToaDoDiem[6]))+min(sapxepX(ToaDoDiem[6])))/2:
         msp.add_text(TenTam[i], dxfattribs = {'style': 'LiberationSerif', 'height': 15}).set_pos((a[0][0]+250, a[0][1], (sapxepZ(t1)[0]+sapxepZ(t1)[1])/2), align='CENTER')
-    if min(sapxepY(t1)) > min(sapxepY(ToaDoDiem[2])) and min(sapxepY(t1)) > min(sapxepY(ToaDoDiem[5])) and min(sapxepY(t1)) > min(sapxepY(ToaDoDiem[6])):
+    if min(sapxepY(t1)) > (max(sapxepY(ToaDoDiem[2]))+min(sapxepY(ToaDoDiem[2])))/2 and min(sapxepY(t1)) > (max(sapxepY(ToaDoDiem[5]))+min(sapxepY(ToaDoDiem[5])))/2 and min(sapxepY(t1)) > (max(sapxepY(ToaDoDiem[6]))+min(sapxepY(ToaDoDiem[6])))/2:
         if i != 4:
             msp.add_text(TenTam[i], dxfattribs = {'style': 'LiberationSerif', 'height': 15}).set_pos((a[0][0]+110, a[0][1], (sapxepZ(t1)[0]+sapxepZ(t1)[1])/2), align='CENTER')
         else:
             msp.add_text(TenTam[i], dxfattribs = {'style': 'LiberationSerif', 'height': 15}).set_pos((a[0][0]+200, a[0][1], (sapxepZ(t1)[0]+sapxepZ(t1)[1])/2), align='CENTER')
-    if max(sapxepY(t1)) < max(sapxepY(ToaDoDiem[2])) and max(sapxepY(t1)) < max(sapxepY(ToaDoDiem[5])) and max(sapxepY(t1)) < max(sapxepY(ToaDoDiem[6])):
+    if max(sapxepY(t1)) < (max(sapxepY(ToaDoDiem[2]))+min(sapxepY(ToaDoDiem[2])))/2 and max(sapxepY(t1)) < (max(sapxepY(ToaDoDiem[5]))+min(sapxepY(ToaDoDiem[5])))/2 and max(sapxepY(t1)) < (max(sapxepY(ToaDoDiem[6]))+min(sapxepY(ToaDoDiem[6])))/2:
         msp.add_text(TenTam[i], dxfattribs = {'style': 'LiberationSerif', 'height': 15}).set_pos((a[0][0]+150, a[0][1]-300, (sapxepZ(t1)[0]+sapxepZ(t1)[1])/2), align='CENTER')
     if i == 2:
         msp.add_text(TenTam[i], dxfattribs = {'style': 'LiberationSerif', 'height': 15}).set_pos(((sapxepX(ToaDoDiem[2])[0]+sapxepX(ToaDoDiem[2])[1])/2, (sapxepY(ToaDoDiem[2])[0]+sapxepY(ToaDoDiem[2])[1])/2, sapxepZ(ToaDoDiem[2])[1]+50), align='CENTER')
