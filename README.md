@@ -7,6 +7,7 @@ Với đề tài này bọn em đã biết được thêm về các thuật toá
 
 * File XoayCacTam.py là để xoay các tấm đó quanh các trục x,y,z sử dụng thuật toán xoay hình 3d liên quan đến lượng giác
   + Đầu tiên bọn cũng em sẽ lấy các dữ liệu được lấy từ file xml là các toạ độ điểm, chiều dài, chiều rộng, chiều cao, tên của mỗi tấm, góc xoay quanh trục của mỗi tấm
+  + Tiếp theo bọn em cũng sẽ tạo ra 1 list chứa toạ độ điểm của mỗi tấm, 1 list chứa chiều dài, chiều rộng, chiều cao của mỗi tấm, 1 list chứa các góc xoay quanh trục của mỗi tấm, rồi bằng thuật toán xoay hình 3d bọn em sẽ thay đổi các giá trị x, các giá trị y, các giá trị z của tọa độ điểm mỗi tấm. Sau đó bọn em lưu hết các giá trị x, y, z đó vào 1 list rỗng khác
   
 * File bezierAlgo sử dụng thuật toán hay phương trình đường cong bezier để vẽ ra các đường cong từ việc nối rất nhiều đoạn thẳng cực nhỏ giữa các đoạn thẳng đó có độ chênh lệch nghiêng cực nhỏ tức phương trình trên biến các điểm điều khiển đường cong thành nhiều điểm cực sát nhau có quỹ đạo trở thành đường cong rồi nối trúng lại với nhau bhằng phương thức add_line() của ezdxf là phương thức nối đoạn thẳng giữa 2 điểm
   +
