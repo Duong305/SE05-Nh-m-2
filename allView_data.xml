@@ -1,0 +1,137 @@
+<Module name="Left open Cabinet"> <!--Tên module-->
+	<!--Thông tin kích thước, góc xoay của module. Mỗi module là tập hợp các tấm thành phần ghép lại với nhau-->
+    <Values W="400" D="550" H="650" PX="6097.62" PY="1895.22" PZ="100" RX="0" RY="0" RZ="0" />  <!--W: width, D: Depth, H:Height, PX,PY,PZ: Toạ độ của module trên trục xyz, RX,RY,RZ: góc xoay của module trên trục xyz-->
+    <Part name="Left Board" type="board" grainDirection="horizontal"> <!--Mỗi Part là 1 tấm thành phần của module, name là tên tấm-->
+        <Values W="650" D="550" H="18" PX="18" PY="0" PZ="0" RX="0" RY="-90" RZ="0" /> <!--W: width, D: Depth, H:Height, PX,PY,PZ: Toạ độ của tấm trên trục xyz, RX,RY,RZ: góc xoay của tấm trên trục xyz-->
+        <FaceBoard>
+            <face><!--Mỗi globalP là toạ độ 1 đỉnh của tấm-->
+                <globalP x="6115.62" y="1895.22" z="100" />
+                <globalP x="6115.62" y="1345.22" z="100" />
+                <globalP x="6115.62" y="1345.22" z="750" />
+                <globalP x="6115.62" y="1895.22" z="750" />
+                <globalP x="6097.62" y="1895.22" z="100" />
+                <globalP x="6097.62" y="1345.22" z="100" />
+                <globalP x="6097.62" y="1345.22" z="750" />
+                <globalP x="6097.62" y="1895.22" z="750" />
+            </face>
+        </FaceBoard>
+    </Part>
+    <Part name="Right panel" type="board" grainDirection="horizontal">
+        <Values W="650" D="550" H="18" PX="400" PY="0" PZ="0" RX="0" RY="-90" RZ="0" />
+        <FaceBoard>
+            <face>
+                <globalP x="6497.62" y="1895.22" z="100" />
+                <globalP x="6497.62" y="1345.22" z="100" />
+                <globalP x="6497.62" y="1345.22" z="750" />
+                <globalP x="6497.62" y="1895.22" z="750" />
+                <globalP x="6479.62" y="1895.22" z="100" />
+                <globalP x="6479.62" y="1345.22" z="100" />
+                <globalP x="6479.62" y="1345.22" z="750" />
+                <globalP x="6479.62" y="1895.22" z="750" />
+            </face>
+        </FaceBoard>
+    </Part>
+    <Part name="Floor" type="board" grainDirection="horizontal">
+        <Values W="364" D="550" H="18" PX="18" PY="0" PZ="0" RX="0" RY="0" RZ="0" />
+        <FaceBoard>
+            <face>
+                <globalP x="6115.62" y="1895.22" z="100" />
+                <globalP x="6115.62" y="1345.22" z="100" />
+                <globalP x="6479.62" y="1345.22" z="100" />
+                <globalP x="6479.62" y="1895.22" z="100" />
+                <globalP x="6115.62" y="1895.22" z="118" />
+                <globalP x="6115.62" y="1345.22" z="118" />
+                <globalP x="6479.62" y="1345.22" z="118" />
+                <globalP x="6479.62" y="1895.22" z="118" />
+            </face>
+        </FaceBoard>
+    </Part>
+    <Part name="Thin back plate" type="board" grainDirection="horizontal">
+        <Values W="637" D="374" H="9" PX="13" PY="-20.5" PZ="13" RX="0" RY="-90" RZ="90" />
+        <FaceBoard>
+            <face>
+                <globalP x="6110.62" y="1874.72" z="113" />
+                <globalP x="6484.62" y="1874.72" z="113" />
+                <globalP x="6484.62" y="1874.72" z="750" />
+                <globalP x="6110.62" y="1874.72" z="750" />
+                <globalP x="6110.62" y="1865.72" z="113" />
+                <globalP x="6484.62" y="1865.72" z="113" />
+                <globalP x="6484.62" y="1865.72" z="750" />
+                <globalP x="6110.62" y="1865.72" z="750" />
+            </face>
+        </FaceBoard>
+    </Part>
+    <Part name="Back Pull Bar" type="board" grainDirection="vertical">
+        <Values W="80" D="364" H="18" PX="18" PY="-29.5" PZ="570" RX="0" RY="-90" RZ="90" />
+        <FaceBoard>
+            <face>
+                <globalP x="6115.62" y="1865.72" z="670" />
+                <globalP x="6479.62" y="1865.72" z="670" />
+                <globalP x="6479.62" y="1865.72" z="750" />
+                <globalP x="6115.62" y="1865.72" z="750" />
+                <globalP x="6115.62" y="1847.72" z="670" />
+                <globalP x="6479.62" y="1847.72" z="670" />
+                <globalP x="6479.62" y="1847.72" z="750" />
+                <globalP x="6115.62" y="1847.72" z="750" />
+            </face>
+        </FaceBoard>
+    </Part>
+    <Part name="Cover board-Horizontal dress" type="board" grainDirection="horizontal">
+        <Values W="364" D="80" H="18" PX="18" PY="-470" PZ="632" RX="0" RY="0" RZ="0" />
+        <FaceBoard>
+            <face>
+                <globalP x="6115.62" y="1425.22" z="732" />
+                <globalP x="6115.62" y="1345.22" z="732" />
+                <globalP x="6479.62" y="1345.22" z="732" />
+                <globalP x="6479.62" y="1425.22" z="732" />
+                <globalP x="6115.62" y="1425.22" z="750" />
+                <globalP x="6115.62" y="1345.22" z="750" />
+                <globalP x="6479.62" y="1345.22" z="750" />
+                <globalP x="6479.62" y="1425.22" z="750" />
+            </face>
+        </FaceBoard>
+    </Part>
+    <Part name="Active Layer Board">
+        <Values W="364" D="520.5" H="18" PX="18" PY="-29.5" PZ="316" RX="0" RY="0" RZ="0" />
+        <Part name="Active Layer Board" type="board" grainDirection="horizontal">
+            <Values W="364" D="518" H="18" PX="0" PY="-0.5" PZ="0" RX="0" RY="0" RZ="0" />
+            <FaceBoard>
+                <face>
+                    <globalP x="6115.62" y="1865.22" z="416" />
+                    <globalP x="6115.62" y="1347.22" z="416" />
+                    <globalP x="6479.62" y="1347.22" z="416" />
+                    <globalP x="6479.62" y="1865.22" z="416" />
+                    <globalP x="6115.62" y="1865.22" z="434" />
+                    <globalP x="6115.62" y="1347.22" z="434" />
+                    <globalP x="6479.62" y="1347.22" z="434" />
+                    <globalP x="6479.62" y="1865.22" z="434" />
+                </face>
+            </FaceBoard>
+        </Part>
+    </Part>
+    <Part name="Cover Door" type="swingDoorEntity"> <!--Cửa tủ, Một tủ có thể có nhiều tấm (trong trường hợp này thì chỉ có 1 tấm)-->
+        <Values W="397" D="18" H="642" PX="1.5" PY="-550" PZ="1.5" RX="0" RY="0" RZ="0" />
+        <Part name="Cover Doors" type="swingDoorLeafEntity">
+            <Values W="397" D="18" H="642" PX="0" PY="0" PZ="0" RX="0" RY="0" RZ="0" />
+            <Part name="Tấm cửa" type="door_board">
+                <Values W="397" D="18" H="642" PX="0" PY="0" PZ="0" RX="0" RY="0" RZ="0" />
+                <EdgeInfo mode="1" edges="H,H,H,H" fatEdgeStart="1" fatEdgeEnd="4" />
+                <Part name="Tên vật liệu" type="board" grainDirection="vertical">
+                    <Values W="397" D="642" H="18" PX="0" PY="-18" PZ="0" RX="-90" RY="0" RZ="0" />
+                    <FaceBoard>
+                        <face>
+                            <globalP x="6099.12" y="1327.22" z="101.5" />
+                            <globalP x="6099.12" y="1327.22" z="743.5" />
+                            <globalP x="6496.12" y="1327.22" z="743.5" />
+                            <globalP x="6496.12" y="1327.22" z="101.5" />
+                            <globalP x="6099.12" y="1345.22" z="101.5" />
+                            <globalP x="6099.12" y="1345.22" z="743.5" />
+                            <globalP x="6496.12" y="1345.22" z="743.5" />
+                            <globalP x="6496.12" y="1345.22" z="101.5" />
+                        </face>
+                    </FaceBoard>
+                </Part>
+            </Part>
+        </Part>
+    </Part>
+</Module>
