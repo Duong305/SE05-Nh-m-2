@@ -1,4 +1,4 @@
-# SE05-Nhom2 (AutoCad thử nghiệm thuật toán biến đổi hình học với Python)
+# SE05-Nhom2 (AutoCad với Python)
 Cad là để vẽ các bản vẽ phục vụ cho việc xây dựng và sản xuất. Với đề tài này chúng mình đã biết được thêm về thuật toán là xoay hình 3d và dùng phương trình bezier để vẽ đường cong bằng cách nối nhiều đoạn thẳng rất nhỏ lại với nhau
 
 Những người đóng góp:
@@ -8,7 +8,7 @@ Những người đóng góp:
 Yêu cầu:
   * Ít nhất phải là python 3.6, cài đặt thêm các thư viện ezdxf 0.14.2, more_itertools của python
     + Hướng dẫn cài đặt(đối với hệ điều hành Windows): 
-      + Trước tiên bạn phải cập nhật pip gõ lệnh 
+      + Trước tiên bạn phải cập nhật pip gõ lệnh trên Command Prompt 
       ``` python -m pip install --upgrade pip ```
       + Sau đó gõ lệnh 
        ``` pip install ezdxf ``` 
@@ -49,3 +49,4 @@ Thực hiện việc vẽ hoặc xoay hình bằng các thuật toán:
       + Đầu tiên chúng mình lấy dữ liệu từ file svg là các tọa độ điểm của các điểm điều khiển đường cong.
       + Tiếp theo chúng mình sẽ tạo ra list d để chứa các list chứa các toạ độ điểm của từng đường cong tức mỗi list trong list d đó chứa các toạ độ điểm của 1 đường cong rồi           sau đó tạo thêm list a để chứa các list rỗng trong mỗi list rỗng đó sẽ được thêm vào các bộ toạ độ điểm mà chúng mình đã tính được là giá trị x, giá trị y nhờ áp dụng           phương trình đường cong bezier biến các điểm điều khiển đường cong thành nhiều điểm cực sát nhau có quỹ đạo trở thành đường cong.
       + Nhờ list a ở trên chúng mình sẽ thực hiện vẽ các đường cong nhờ phương thức add_line() của ezdxf là phương thức nối đoạn thẳng giữa 2 điểm.
+  * Sau khi đã viết xong các đoạn mã để vẽ ở file python thì các bạn phải xuất file dxf mới thấy được bản vẽ trên Command Prompt  ```gõ python filename.py``` rồi cài đặt phần mềm autodesk hoặc sử dụng phiên bản trên web để thấy được bản vẽ vào [liên kết](https://viewer.autodesk.com/) sau.
