@@ -1,5 +1,5 @@
 # SE05-Nhom2 (AutoCad với Python)
-Với đề tài này bọn em đã biết được thêm về các thuật toán là xoay hình 3d và dùng phương trình bezier để vẽ đường cong bằng cách nối đoạn thẳng từ nhiều đoạn thẳng
+Với đề tài này chúng em đã biết được thêm về các thuật toán là xoay hình 3d và dùng phương trình bezier để vẽ đường cong bằng cách nối đoạn thẳng từ nhiều đoạn thẳng
 * File allViews.py là để vẽ ra các tấm gỗ hay dc gọi là các thành phần của tủ các tấm đó từ cái tủ dc tách ra thành nhiều tấm cách nhau 1 khoảng nhất định và chú thích tên của từng tấm vào đúng vị trí của tấm đó
   + Đầu tiên chúng em sẽ lấy các dữ liệu được lấy từ file xml là các toạ độ điểm, chiều dài, chiều rộng, chiều cao, tên của mỗi tấm.  
   + Tiếp theo chúng em sẽ tạo ra 1 list chứa toạ độ điểm của mỗi tấm, 1 list chứa chiều dài, chiều rộng, chiều cao của mỗi tấm, 1 list chứa tên của mỗi tấm rồi tịnh tiến các tấm       thành phần của tủ đó bằng cách thêm bớt các giá trị x, các giá trị y của toạ độ điểm vì ở đây chúng em giữ nguyên vị trí 3 tấm ở giữa rồi sau đó lưu lại các giá trị x,y thay đổi đó vào list rỗng khác và thêm tên vào mỗi tấm đó.
