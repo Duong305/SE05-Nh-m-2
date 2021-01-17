@@ -32,7 +32,7 @@ Trước khi thực hiện việc vẽ chúng mình sẽ hướng dẫn các b�
         for i in expertise:
           x = i.getAttribute("x")
           y = i.getAttribute("y")
-          z = i.getAttribute("z") 
+          z = i.getAttribute("z") # Đối với file svg cũng làm tương tự nhưng bạn nhớ đổi dạng file truyền vào xml.dom.minidom.parse("filename.svg") 
     ```
 Thực hiện việc vẽ hoặc xoay hình bằng các thuật toán:          
   * File allViews.py là để vẽ ra các tấm gỗ hay dc gọi là các thành phần của tủ các tấm đó từ cái tủ dc tách ra thành nhiều tấm cách nhau 1 khoảng nhất định và chú thích tên của     từng tấm vào đúng vị trí của tấm đó
