@@ -36,12 +36,11 @@ print(len(d))
 doc = ezdxf.new('R2010')
 msp = doc.modelspace()
 a = []
-for i in range(len(d)):
-    a.append([])
 s = 0
 s1 = 0
 c = -1
 for i in range(len(d)):
+    a.append([])
     n = int((len(d[i])/2))-1
     for t in mit.numeric_range(0, 1.01, 0.01):
         for k1,k2 in zip(calculateGeneral(n, d[i])[0], calculateGeneral(n, d[i])[1]):
