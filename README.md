@@ -3,7 +3,7 @@ Cad là để vẽ các bản vẽ phục vụ cho việc xây dựng và sản 
 
 Những người đóng góp:
   * Hồ Sĩ Dương - 18001029 - K63A5 - HUS  
-  * Phạm Trí Đức - 18001029 - K63A5 - HUS
+  * Phạm Trí Đức - 18001032 - K63A5 - HUS
   
 Yêu cầu:
   * Ít nhất phải là python 3.6, cài đặt thêm các thư viện ezdxf 0.14.2, more_itertools của python
