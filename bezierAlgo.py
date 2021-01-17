@@ -16,7 +16,7 @@ def calculateGeneral(n, d):
         x.append((factorial(n)/(factorial(n-i)*factorial(i)))*m[0])
         y.append((factorial(n)/(factorial(n-i)*factorial(i)))*m[1])
     return x,y
-doc1 = xml.dom.minidom.parse("a.svg")
+doc1 = xml.dom.minidom.parse("bezierAlgo_data.svg")
 expertise = doc1.getElementsByTagName("path")
 b = []
 for i in expertise:
@@ -35,22 +35,22 @@ for i in b:
 print(len(d))
 doc = ezdxf.new('R2010')
 msp = doc.modelspace()
-a = []
+ToaDoDiem = []
 s = 0
 s1 = 0
-c = -1
+count = -1
 for i in range(len(d)):
-    a.append([])
+    ToaDoDiem.append([])
     n = int((len(d[i])/2))-1
     for t in mit.numeric_range(0, 1.01, 0.01):
         for k1,k2 in zip(calculateGeneral(n, d[i])[0], calculateGeneral(n, d[i])[1]):
-            c += 1
-            s += k1*((1-t)**(n-c))*(t**c)
-            s1 += k2*((1-t)**(n-c))*(t**c)
-        c = -1
-        a[i].append((s, s1))
+            count += 1
+            s += k1*((1-t)**(n-count))*(t**count)
+            s1 += k2*((1-t)**(n-count))*(t**count)
+        count = -1
+        ToaDoDiem[i].append((s, s1))
         s,s1 = 0,0         
-for i in a:
+for i in ToaDoDiem:
     for m in range(len(i)-1):
         msp.add_line(i[m], i[m+1], dxfattribs = {'color':1})
 doc.saveas('bezier.dxf')
