@@ -1,4 +1,4 @@
-# SE05-Nhom2 (AutoCad với Python)
+# SE05-Nhom2 (AutoCad thử nghiệm thuật toán biến đổi hình học với Python)
 Cad là để vẽ các bản vẽ phục vụ cho việc xây dựng và sản xuất. Với đề tài này chúng mình đã biết được thêm về thuật toán là xoay hình 3d và dùng phương trình bezier để vẽ đường cong bằng cách nối nhiều đoạn thẳng rất nhỏ lại với nhau
 
 Những người đóng góp:
