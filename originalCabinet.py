@@ -2,7 +2,6 @@ import ezdxf
 import math
 import xml.dom.minidom
 from decimal import *
-import more_itertools as mit
 def sapxep(a):
     b = []
     for i in a:
