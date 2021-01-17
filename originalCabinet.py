@@ -14,7 +14,7 @@ def sapxep(a):
         i.sort()
         c.append(tuple(i))
     return list(set(c))
-doc = xml.dom.minidom.parse("a.xml")
+doc = xml.dom.minidom.parse("allView_data.xml")
 expertise = doc.getElementsByTagName("globalP")
 expertise1 = doc.getElementsByTagName("Values")
 expertise1.pop(0)
