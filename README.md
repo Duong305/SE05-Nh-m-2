@@ -1,5 +1,6 @@
 # SE05-Nhom2 (AutoCad với Python)
 Cad là để vẽ các bản vẽ phục vụ cho việc xây dựng và sản xuất. Với đề tài này chúng mình đã biết được thêm về thuật toán là xoay hình 3d và dùng phương trình bezier để vẽ đường cong bằng cách nối nhiều đoạn thẳng rất nhỏ lại với nhau
+
 Những người đóng góp:
   * Hồ Sĩ Dương - 18001029 - K63A5 - HUS  
   * Phạm Trí Đức - 18001029 - K63A5 - HUS
@@ -16,12 +17,14 @@ Yêu cầu:
 Tài liệu tham khảo:
   * [Xoay hình 3D](https://www.it-swarm-vi.tech/vi/math/xoay-mot-vector-trong-khong-gian-3d/1071293716/)
   * [Đường cong bezier](https://vi.wikipedia.org/wiki/%C4%90%C6%B0%E1%BB%9Dng_cong_B%C3%A9zier)
+  
 Trước khi thực hiện việc vẽ chúng mình sẽ hướng dẫn các bạn sử dụng các lệnh để từ ezdxf xuất ra file dxf và cách lấy dữ liệu từ file xml hoặc svg:
   * ví dụ về việc xuất ra file dxf:
     ``` import ezdxf
         doc = ezdxf.new('R2010')
         ........
-        doc.saveas('filename.dxf') ```
+        doc.saveas('filename.dxf') 
+    ```
   * ví dụ về việc lấy dữ liệu của file xml hoặc svg:
     ``` import xml.dom.minidom 
         doc = xml.dom.minidom.parse("allView_data.xml") # đối với file allView_data.xml
@@ -29,7 +32,8 @@ Trước khi thực hiện việc vẽ chúng mình sẽ hướng dẫn các b�
         for i in expertise:
           x = expertise[i].getAttribute("x")
           y = expertise[i].getAttribute("y")
-          z = expertise[i].getAttribute("z") ```
+          z = expertise[i].getAttribute("z") 
+    ```
 Thực hiện việc vẽ hoặc xoay hình bằng các thuật toán:          
   * File allViews.py là để vẽ ra các tấm gỗ hay dc gọi là các thành phần của tủ các tấm đó từ cái tủ dc tách ra thành nhiều tấm cách nhau 1 khoảng nhất định và chú thích tên của     từng tấm vào đúng vị trí của tấm đó
     + Đầu tiên chúng mình sẽ lấy các dữ liệu được lấy từ file xml là các toạ độ điểm, chiều dài, chiều rộng, chiều cao, tên của mỗi tấm.  
