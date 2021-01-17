@@ -30,9 +30,9 @@ Trước khi thực hiện việc vẽ chúng mình sẽ hướng dẫn các b�
         doc = xml.dom.minidom.parse("allView_data.xml") # đối với file allView_data.xml
         expertise = doc.getElementsByTagName("globalP")
         for i in expertise:
-          x = expertise[i].getAttribute("x")
-          y = expertise[i].getAttribute("y")
-          z = expertise[i].getAttribute("z") 
+          x = i.getAttribute("x")
+          y = i.getAttribute("y")
+          z = i.getAttribute("z") 
     ```
 Thực hiện việc vẽ hoặc xoay hình bằng các thuật toán:          
   * File allViews.py là để vẽ ra các tấm gỗ hay dc gọi là các thành phần của tủ các tấm đó từ cái tủ dc tách ra thành nhiều tấm cách nhau 1 khoảng nhất định và chú thích tên của     từng tấm vào đúng vị trí của tấm đó
