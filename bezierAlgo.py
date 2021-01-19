@@ -41,7 +41,7 @@ count = -1
 for i in range(len(d)):
     ToaDoDiem.append([])
     n = int((len(d[i])/2))-1
-    for t in mit.numeric_range(0, 1.001, 0.01):
+    for t in mit.numeric_range(0, 1.01, 0.01):
         for m in range(len(d[i])):
             if m%2 == 0:
                 count += 1            
